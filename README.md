@@ -5,7 +5,7 @@ Customisation:
  {
      ...
      sprintf(name, " [MEM:%.2f%%] [CPU:%.2f%%] [%s] ", 
-            get_mem(), get_cpu(), get_time());
+            get_mem(), get_cpu(cpu_stat), get_time());
  }
 ```
 Compilation: `cc -o ssm ssm.c -O3 -lX11
