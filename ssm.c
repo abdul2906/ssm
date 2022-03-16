@@ -65,10 +65,6 @@ float get_mem(void)
     return (total_ram-free_ram)/total_ram*100;
 }
 
-/*
-* TODO: Fix this (it misbehaves randomly)
-*/
-
 int* get_cpu_stat(void)
 {
     FILE* stat = fopen("/proc/stat", "r");
