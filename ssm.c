@@ -82,8 +82,10 @@ int* get_cpu_stat(void)
 
         int* cpu_stat = malloc(9*sizeof(int));
         memcpy(cpu_stat, _cpu_stat, 9*sizeof(int));
+        fclose(stat);
         return cpu_stat;
     }
+    fclose(stat);
 }
 
 float get_cpu(int* last_stat)
